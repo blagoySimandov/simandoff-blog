@@ -1,0 +1,57 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Blagoy Simandoff'
+theme = 'PaperMod'
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+  env = "production"
+  title = "Blagoy Simandoff's Blog"
+  description = "Personal blog about software engineering and cloud infrastructure"
+  keywords = ["Blog", "Portfolio", "Development", "Cloud", "GCP", "Go"]
+  author = "Blagoy Simandoff"
+  DateFormat = "January 2, 2006"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+
+[params.homeInfoParams]
+  Title = "👋 Hey, I'm Blagoy"
+  Content = """
+  Software engineer passionate about cloud architecture, Go, and system design.
+  
+  - 🚀 GCP & Cloud Architecture
+  - 💻 Backend Development
+  - 🔧 System Design
+  """
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/blagoySimandov"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/blagoy-simandoff-48416b27a/"
+
+[params.assets]
+  disableHLJS = true
+  favicon = "favicon.ico"
+  favicon16x16 = "favicon-16x16.png"
+  favicon32x32 = "favicon-32x32.png"
+  apple_touch_icon = "apple-touch-icon.png"
+
+[params.cover]
+  linkFullImages = true
+
+[params.assets.css]
+  custom = ["css/custom.css"]

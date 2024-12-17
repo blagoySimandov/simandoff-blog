@@ -1,0 +1,42 @@
+.home-info {
+    background: linear-gradient(to right, white 50%, #1a1a1a 50%);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.home-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px auto;
+    display: block;
+    border: 3px solid #eee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-info .entry-content {
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+[data-theme="dark"] .home-info {
+    background: linear-gradient(to right, #2d2d2d 50%, black 50%);
+}
+
+/* Ensure text is readable on both backgrounds */
+.home-info h1 {
+    text-align: center;
+    background: -webkit-linear-gradient(left, #1a1a1a 50%, white 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+[data-theme="dark"] .home-info h1 {
+    background: -webkit-linear-gradient(left, white 50%, #cccccc 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
