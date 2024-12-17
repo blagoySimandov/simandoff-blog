@@ -33,8 +33,6 @@ cover:
   relative: false
 ---
 
-![Photo by Nuno Patricio taken from Flickr](/google-cloud.jpg)
-
 A few weeks back I had to create a new GraphQL route in an existing Go application to handle simple file uploads to a GCP bucket for a project that I was building. Seemed pretty straightforward at first but a combination of misleading documentation and an unbeknown browser particularity made it way more convoluted than it needed to be.
 
 First let's import the google cloud storage SDK for Go:
