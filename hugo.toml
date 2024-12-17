@@ -61,4 +61,4 @@ buildExpired = false
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.139.5"
+  HUGO_VERSION = "0.121.1"
