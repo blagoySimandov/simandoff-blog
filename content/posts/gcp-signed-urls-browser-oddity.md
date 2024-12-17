@@ -1,8 +1,36 @@
 ---
 title: "GCP's Signed URLs & A Browser Oddity"
+description: "Learn how to handle GCP signed URLs in browsers, common pitfalls with Content-Type headers, and a solution to the 403 Forbidden error when uploading files to Google Cloud Storage."
+summary: "A deep dive into browser quirks when using Google Cloud Storage signed URLs, and how to handle Content-Type headers properly for successful file uploads."
 date: 2024-01-09
 draft: false
-tags: ["GCP", "Go", "JavaScript", "Cloud Storage"]
+tags:
+  ["GCP", "Go", "JavaScript", "Cloud Storage", "Web Development", "Browser API"]
+keywords:
+  [
+    "GCP signed URLs",
+    "Google Cloud Storage",
+    "file upload",
+    "Content-Type header",
+    "browser quirks",
+    "403 Forbidden",
+    "Go SDK",
+    "JavaScript fetch",
+    "cloud storage upload",
+  ]
+author: "Blagoy Simandoff"
+canonicalURL: "https://simandoff.blog/posts/gcp-signed-urls-browser-oddity/"
+ShowReadingTime: true
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+UseHugoToc: true
+cover:
+  image: "/google-cloud.jpg"
+  alt: "Google Cloud Platform"
+  caption: "Photo by Nuno Patricio taken from Flickr"
+  relative: false
 ---
 
 ![Photo by Nuno Patricio taken from Flickr](/google-cloud.jpg)
