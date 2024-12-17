@@ -8,6 +8,15 @@ buildDrafts = false
 buildFuture = false
 buildExpired = false
 
+# Sitemap Configuration
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Robots.txt Configuration
+enableRobotsTXT = true
+
 [params]
   env = "production"
   title = "Blagoy Simandoff's Blog"
