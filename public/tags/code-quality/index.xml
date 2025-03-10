@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Code Quality on Blagoy Simandoff</title>
+    <link>https://simandoff.blog/tags/code-quality/</link>
+    <description>Recent content in Code Quality on Blagoy Simandoff</description>
+    <generator>Hugo -- 0.139.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://simandoff.blog/tags/code-quality/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech Minimalism: Doing More with Less</title>
+      <link>https://simandoff.blog/posts/tech-minimalism/</link>
+      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://simandoff.blog/posts/tech-minimalism/</guid>
+      <description>A deep dive into the problem of code explosion in the AI era and why minimalism in software development is more important than ever.</description>
+    </item>
+  </channel>
+</rss>
