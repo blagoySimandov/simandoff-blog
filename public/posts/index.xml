@@ -2,24 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Blagoy Simandoff</title>
-    <link>https://simandoff.blog/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Blagoy Simandoff</description>
     <generator>Hugo -- 0.139.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://simandoff.blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 May 2025 00:17:26 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developer Productivity: Why Moving Work Across the Board Matters More Than Perfect Code</title>
+      <link>http://localhost:1313/posts/team-productivity/</link>
+      <pubDate>Mon, 05 May 2025 00:17:26 +0100</pubDate>
+      <guid>http://localhost:1313/posts/team-productivity/</guid>
+      <description>A look at the PR process and how being overscrupulous can harm a team.</description>
+    </item>
     <item>
       <title>Tech Minimalism: Doing More with Less</title>
-      <link>https://simandoff.blog/posts/tech-minimalism/</link>
+      <link>http://localhost:1313/posts/tech-minimalism/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://simandoff.blog/posts/tech-minimalism/</guid>
-      <description>A deep dive into the problem of code explosion in the AI era and why minimalism in software development is more important than ever.</description>
+      <guid>http://localhost:1313/posts/tech-minimalism/</guid>
+      <description>The problem of code explosion in the AI era and why minimalism in software development is more important than ever.</description>
     </item>
     <item>
       <title>GCP&#39;s Signed URLs &amp; A Browser Oddity</title>
-      <link>https://simandoff.blog/posts/gcp-signed-urls-browser-oddity/</link>
+      <link>http://localhost:1313/posts/gcp-signed-urls-browser-oddity/</link>
       <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://simandoff.blog/posts/gcp-signed-urls-browser-oddity/</guid>
+      <guid>http://localhost:1313/posts/gcp-signed-urls-browser-oddity/</guid>
       <description>Learn how to handle GCP signed URLs in browsers, common pitfalls with Content-Type headers, and a solution to the 403 Forbidden error when uploading files to Google Cloud Storage.</description>
     </item>
   </channel>

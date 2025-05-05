@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Go on Blagoy Simandoff</title>
-    <link>https://simandoff.blog/tags/go/</link>
+    <link>http://localhost:1313/tags/go/</link>
     <description>Recent content in Go on Blagoy Simandoff</description>
     <generator>Hugo -- 0.139.5</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://simandoff.blog/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GCP&#39;s Signed URLs &amp; A Browser Oddity</title>
-      <link>https://simandoff.blog/posts/gcp-signed-urls-browser-oddity/</link>
+      <link>http://localhost:1313/posts/gcp-signed-urls-browser-oddity/</link>
       <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://simandoff.blog/posts/gcp-signed-urls-browser-oddity/</guid>
+      <guid>http://localhost:1313/posts/gcp-signed-urls-browser-oddity/</guid>
       <description>Learn how to handle GCP signed URLs in browsers, common pitfalls with Content-Type headers, and a solution to the 403 Forbidden error when uploading files to Google Cloud Storage.</description>
     </item>
   </channel>

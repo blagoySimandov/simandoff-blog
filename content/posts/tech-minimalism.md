@@ -1,8 +1,8 @@
 ---
 title: "Tech Minimalism: Doing More with Less"
 description:
-  "A deep dive into the problem of code explosion in the AI era and why
-  minimalism in software development is more important than ever."
+  "The problem of code explosion in the AI era and why minimalism in software
+  development is more important than ever."
 summary:
   "How AI-driven development leads to code explosion and why developers should
   embrace minimalism."

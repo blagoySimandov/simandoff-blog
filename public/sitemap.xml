@@ -2,87 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://simandoff.blog/tags/ai-in-development/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-05-05T00:17:26+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/developer-practices/</loc>
+    <lastmod>2025-05-05T00:17:26+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/team-productivity/</loc>
+    <lastmod>2025-05-05T00:17:26+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-05-05T00:17:26+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-05-05T00:17:26+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/team-productivity/</loc>
+    <lastmod>2025-05-05T00:17:26+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/ai-in-development/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://simandoff.blog/</loc>
+    <loc>http://localhost:1313/tags/code-quality/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://simandoff.blog/tags/code-quality/</loc>
+    <loc>http://localhost:1313/tags/minimalism/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://simandoff.blog/tags/minimalism/</loc>
+    <loc>http://localhost:1313/tags/software-design/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://simandoff.blog/posts/</loc>
+    <loc>http://localhost:1313/tags/software-engineering/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://simandoff.blog/tags/software-design/</loc>
+    <loc>http://localhost:1313/posts/tech-minimalism/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://simandoff.blog/tags/software-engineering/</loc>
-    <lastmod>2025-03-10T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://simandoff.blog/tags/</loc>
-    <lastmod>2025-03-10T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://simandoff.blog/posts/tech-minimalism/</loc>
-    <lastmod>2025-03-10T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://simandoff.blog/tags/browser-api/</loc>
+    <loc>http://localhost:1313/tags/browser-api/</loc>
     <lastmod>2024-01-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://simandoff.blog/tags/cloud-storage/</loc>
+    <loc>http://localhost:1313/tags/cloud-storage/</loc>
     <lastmod>2024-01-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://simandoff.blog/tags/gcp/</loc>
+    <loc>http://localhost:1313/tags/gcp/</loc>
     <lastmod>2024-01-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://simandoff.blog/posts/gcp-signed-urls-browser-oddity/</loc>
+    <loc>http://localhost:1313/posts/gcp-signed-urls-browser-oddity/</loc>
     <lastmod>2024-01-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://simandoff.blog/tags/go/</loc>
+    <loc>http://localhost:1313/tags/go/</loc>
     <lastmod>2024-01-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://simandoff.blog/tags/javascript/</loc>
+    <loc>http://localhost:1313/tags/javascript/</loc>
     <lastmod>2024-01-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://simandoff.blog/tags/web-development/</loc>
+    <loc>http://localhost:1313/tags/web-development/</loc>
     <lastmod>2024-01-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://simandoff.blog/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
