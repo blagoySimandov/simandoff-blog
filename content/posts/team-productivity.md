@@ -125,8 +125,8 @@ A PR would have requested changes of only two types:
 
 The second scenario is the one we need to be wary of.
 
-If a codebase is good enough so that merging it will positively impact the
-codebase, we should have no reason to block it.
+If a PR is good enough so that merging it will positively impact the codebase,
+we should have no reason to block it.
 
 If you have some considerations around the implementation that can better clean
 up the code or even refactor certain parts, create a ticket.
