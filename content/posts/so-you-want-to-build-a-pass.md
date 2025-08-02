@@ -1,11 +1,11 @@
 +++
-title = "So You Want to Build a PasS? (Prompt as a Service 101)"
+title = "So You Want to Build a PaaS? (Prompt as a Service 101)"
 date = 2025-08-02T19:58:53+03:00
 draft = false
-tags = ["AI", "Startup", "Prompt Engineering", "PasS", "React", "n8n", "Venture Capital", "Satire"]
+tags = ["AI", "Startup", "Prompt Engineering", "PaaS", "React", "n8n", "Venture Capital", "Satire"]
 keywords = [
   "Prompt as a Service",
-  "PasS startup",
+  "PaaS startup",
   "AI hype",
   "prompt engineering",
   "React UI",
@@ -31,12 +31,12 @@ UseHugoToc = true
 +++
 
 Everyone’s heard of SaaS — _Software as a Service_. But have you heard of
-**PasS**. And no, we’re not talking about _Platform as a Service_ — that’s
+**PaaS**. And no, we’re not talking about _Platform as a Service_ — that’s
 so 2020. We’re talking about **Prompt as a Service**.
 
 Got a problem you wanted to solve, but AI already did 90% of the job for you?
 
-**Build a PasS.**
+**Build a PaaS.**
 
 Wrap your single ChatGPT prompt in a half-decent UI — obviously vibe-coded in
 React — and watch the clicks and downloads flood your landing page. Then, mount
@@ -142,7 +142,7 @@ trial that requires a credit card _“for verification purposes.”_
 
 ### **Step 7: Exit Strategy (because why actually build anything?)**
 
-Every proper PasS startup needs a clear endgame — ideally one that requires
+Every proper PaaS startup needs a clear endgame — ideally one that requires
 minimal execution.
 
 Here are your options:
@@ -156,11 +156,11 @@ Here are your options:
   calls until someone throws money at you. Bonus points if you make some
   LinkedIn posts.
 - **Open-source it all** and post on Hacker News with the title: _“We built a
-  $3M ARR PasS and shut it down to focus on our next project.”._ Now you might
+  $3M ARR PaaS and shut it down to focus on our next project.”._ Now you might
   not get the money but at least you got the clout.
 
 And that’s it.
 
-You’re now running a successful PasS startup.
+You’re now running a successful PaaS startup.
 
 See you at the next AI summit fellow prompters.
