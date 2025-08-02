@@ -2,31 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Blagoy Simandoff</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://simandoff.blog/posts/</link>
     <description>Recent content in Posts on Blagoy Simandoff</description>
     <generator>Hugo -- 0.139.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 May 2025 00:17:26 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Aug 2025 19:58:53 +0300</lastBuildDate>
+    <atom:link href="https://simandoff.blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>So You Want to Build a PasS? (Prompt as a Service 101)</title>
+      <link>https://simandoff.blog/posts/so-you-want-to-build-a-pass/</link>
+      <pubDate>Sat, 02 Aug 2025 19:58:53 +0300</pubDate>
+      <guid>https://simandoff.blog/posts/so-you-want-to-build-a-pass/</guid>
+      <description>&lt;p&gt;Everyone’s heard of SaaS — &lt;em&gt;Software as a Service&lt;/em&gt;. But have you heard of
+&lt;strong&gt;PasS&lt;/strong&gt;. And no, we’re not talking about &lt;em&gt;Platform as a Service&lt;/em&gt; — that’s
+so 2020. We’re talking about &lt;strong&gt;Prompt as a Service&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Got a problem you wanted to solve, but AI already did 90% of the job for you?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Build a PasS.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Wrap your single ChatGPT prompt in a half-decent UI — obviously vibe-coded in
+React — and watch the clicks and downloads flood your landing page. Then, mount
+your high horse and craft a quick LinkedIn post about how agentic AI is changing
+the world, and how your new startup &lt;em&gt;BusinessPlanAI&lt;/em&gt; is set to disrupt the $19
+billion business plan market (a number ChatGPT generously made up while hyping
+your pitch deck).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Developer Productivity: Why Moving Work Across the Board Matters More Than Perfect Code</title>
-      <link>http://localhost:1313/posts/team-productivity/</link>
+      <link>https://simandoff.blog/posts/team-productivity/</link>
       <pubDate>Mon, 05 May 2025 00:17:26 +0100</pubDate>
-      <guid>http://localhost:1313/posts/team-productivity/</guid>
+      <guid>https://simandoff.blog/posts/team-productivity/</guid>
       <description>A look at the PR process and how being overscrupulous can harm a team.</description>
     </item>
     <item>
       <title>Tech Minimalism: Doing More with Less</title>
-      <link>http://localhost:1313/posts/tech-minimalism/</link>
+      <link>https://simandoff.blog/posts/tech-minimalism/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/tech-minimalism/</guid>
+      <guid>https://simandoff.blog/posts/tech-minimalism/</guid>
       <description>The problem of code explosion in the AI era and why minimalism in software development is more important than ever.</description>
     </item>
     <item>
       <title>GCP&#39;s Signed URLs &amp; A Browser Oddity</title>
-      <link>http://localhost:1313/posts/gcp-signed-urls-browser-oddity/</link>
+      <link>https://simandoff.blog/posts/gcp-signed-urls-browser-oddity/</link>
       <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/gcp-signed-urls-browser-oddity/</guid>
+      <guid>https://simandoff.blog/posts/gcp-signed-urls-browser-oddity/</guid>
       <description>Learn how to handle GCP signed URLs in browsers, common pitfalls with Content-Type headers, and a solution to the 403 Forbidden error when uploading files to Google Cloud Storage.</description>
     </item>
   </channel>

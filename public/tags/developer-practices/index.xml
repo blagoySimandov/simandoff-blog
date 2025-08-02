@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Developer Practices on Blagoy Simandoff</title>
-    <link>http://localhost:1313/tags/developer-practices/</link>
+    <link>https://simandoff.blog/tags/developer-practices/</link>
     <description>Recent content in Developer Practices on Blagoy Simandoff</description>
     <generator>Hugo -- 0.139.5</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 05 May 2025 00:17:26 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/developer-practices/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://simandoff.blog/tags/developer-practices/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Developer Productivity: Why Moving Work Across the Board Matters More Than Perfect Code</title>
-      <link>http://localhost:1313/posts/team-productivity/</link>
+      <link>https://simandoff.blog/posts/team-productivity/</link>
       <pubDate>Mon, 05 May 2025 00:17:26 +0100</pubDate>
-      <guid>http://localhost:1313/posts/team-productivity/</guid>
+      <guid>https://simandoff.blog/posts/team-productivity/</guid>
       <description>A look at the PR process and how being overscrupulous can harm a team.</description>
     </item>
   </channel>

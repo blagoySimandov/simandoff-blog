@@ -2,101 +2,157 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Blagoy Simandoff</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://simandoff.blog/tags/</link>
     <description>Recent content in Tags on Blagoy Simandoff</description>
     <generator>Hugo -- 0.139.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 May 2025 00:17:26 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Aug 2025 19:58:53 +0300</lastBuildDate>
+    <atom:link href="https://simandoff.blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>https://simandoff.blog/tags/ai/</link>
+      <pubDate>Sat, 02 Aug 2025 19:58:53 +0300</pubDate>
+      <guid>https://simandoff.blog/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>N8n</title>
+      <link>https://simandoff.blog/tags/n8n/</link>
+      <pubDate>Sat, 02 Aug 2025 19:58:53 +0300</pubDate>
+      <guid>https://simandoff.blog/tags/n8n/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PasS</title>
+      <link>https://simandoff.blog/tags/pass/</link>
+      <pubDate>Sat, 02 Aug 2025 19:58:53 +0300</pubDate>
+      <guid>https://simandoff.blog/tags/pass/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prompt Engineering</title>
+      <link>https://simandoff.blog/tags/prompt-engineering/</link>
+      <pubDate>Sat, 02 Aug 2025 19:58:53 +0300</pubDate>
+      <guid>https://simandoff.blog/tags/prompt-engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>React</title>
+      <link>https://simandoff.blog/tags/react/</link>
+      <pubDate>Sat, 02 Aug 2025 19:58:53 +0300</pubDate>
+      <guid>https://simandoff.blog/tags/react/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Satire</title>
+      <link>https://simandoff.blog/tags/satire/</link>
+      <pubDate>Sat, 02 Aug 2025 19:58:53 +0300</pubDate>
+      <guid>https://simandoff.blog/tags/satire/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Startup</title>
+      <link>https://simandoff.blog/tags/startup/</link>
+      <pubDate>Sat, 02 Aug 2025 19:58:53 +0300</pubDate>
+      <guid>https://simandoff.blog/tags/startup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Venture Capital</title>
+      <link>https://simandoff.blog/tags/venture-capital/</link>
+      <pubDate>Sat, 02 Aug 2025 19:58:53 +0300</pubDate>
+      <guid>https://simandoff.blog/tags/venture-capital/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Developer Practices</title>
-      <link>http://localhost:1313/tags/developer-practices/</link>
+      <link>https://simandoff.blog/tags/developer-practices/</link>
       <pubDate>Mon, 05 May 2025 00:17:26 +0100</pubDate>
-      <guid>http://localhost:1313/tags/developer-practices/</guid>
+      <guid>https://simandoff.blog/tags/developer-practices/</guid>
       <description></description>
     </item>
     <item>
       <title>Team Productivity</title>
-      <link>http://localhost:1313/tags/team-productivity/</link>
+      <link>https://simandoff.blog/tags/team-productivity/</link>
       <pubDate>Mon, 05 May 2025 00:17:26 +0100</pubDate>
-      <guid>http://localhost:1313/tags/team-productivity/</guid>
+      <guid>https://simandoff.blog/tags/team-productivity/</guid>
       <description></description>
     </item>
     <item>
       <title>AI in Development</title>
-      <link>http://localhost:1313/tags/ai-in-development/</link>
+      <link>https://simandoff.blog/tags/ai-in-development/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ai-in-development/</guid>
+      <guid>https://simandoff.blog/tags/ai-in-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Code Quality</title>
-      <link>http://localhost:1313/tags/code-quality/</link>
+      <link>https://simandoff.blog/tags/code-quality/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/code-quality/</guid>
+      <guid>https://simandoff.blog/tags/code-quality/</guid>
       <description></description>
     </item>
     <item>
       <title>Minimalism</title>
-      <link>http://localhost:1313/tags/minimalism/</link>
+      <link>https://simandoff.blog/tags/minimalism/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/minimalism/</guid>
+      <guid>https://simandoff.blog/tags/minimalism/</guid>
       <description></description>
     </item>
     <item>
       <title>Software Design</title>
-      <link>http://localhost:1313/tags/software-design/</link>
+      <link>https://simandoff.blog/tags/software-design/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/software-design/</guid>
+      <guid>https://simandoff.blog/tags/software-design/</guid>
       <description></description>
     </item>
     <item>
       <title>Software Engineering</title>
-      <link>http://localhost:1313/tags/software-engineering/</link>
+      <link>https://simandoff.blog/tags/software-engineering/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/software-engineering/</guid>
+      <guid>https://simandoff.blog/tags/software-engineering/</guid>
       <description></description>
     </item>
     <item>
       <title>Browser API</title>
-      <link>http://localhost:1313/tags/browser-api/</link>
+      <link>https://simandoff.blog/tags/browser-api/</link>
       <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/browser-api/</guid>
+      <guid>https://simandoff.blog/tags/browser-api/</guid>
       <description></description>
     </item>
     <item>
       <title>Cloud Storage</title>
-      <link>http://localhost:1313/tags/cloud-storage/</link>
+      <link>https://simandoff.blog/tags/cloud-storage/</link>
       <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cloud-storage/</guid>
+      <guid>https://simandoff.blog/tags/cloud-storage/</guid>
       <description></description>
     </item>
     <item>
       <title>GCP</title>
-      <link>http://localhost:1313/tags/gcp/</link>
+      <link>https://simandoff.blog/tags/gcp/</link>
       <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/gcp/</guid>
+      <guid>https://simandoff.blog/tags/gcp/</guid>
       <description></description>
     </item>
     <item>
       <title>Go</title>
-      <link>http://localhost:1313/tags/go/</link>
+      <link>https://simandoff.blog/tags/go/</link>
       <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/go/</guid>
+      <guid>https://simandoff.blog/tags/go/</guid>
       <description></description>
     </item>
     <item>
       <title>JavaScript</title>
-      <link>http://localhost:1313/tags/javascript/</link>
+      <link>https://simandoff.blog/tags/javascript/</link>
       <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/javascript/</guid>
+      <guid>https://simandoff.blog/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Development</title>
-      <link>http://localhost:1313/tags/web-development/</link>
+      <link>https://simandoff.blog/tags/web-development/</link>
       <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/web-development/</guid>
+      <guid>https://simandoff.blog/tags/web-development/</guid>
       <description></description>
     </item>
   </channel>
