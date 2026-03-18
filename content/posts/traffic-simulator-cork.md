@@ -46,7 +46,7 @@ One of these tools - MATSim - is incredibly powerful. It also requires you to
 know a ton of stuff about how to configure, run and visualize it. You need to
 manually generate a `config.xml`, interpret compressed event logs that have
 hundreds of thousands of entries, manually generate thousands of lines of agent
-plans, specifying how these "virtual people" must move around the city — from
+plans, specifying how these "virtual people" must move around the city - from
 which building to start, to which building to go to school and to which building
 to go to work or to the supermarket. And on top of all this you need a third
 party tool to be able to visualize your matsim simulation. It's built for
@@ -64,13 +64,13 @@ run.
 Before getting into the war stories, here's an overview of what we actually
 built:
 
-- **map-data-service** — FastAPI + PostGIS. Serves road networks from a
+- **map-data-service** - FastAPI + PostGIS. Serves road networks from a
   pre-loaded OpenStreetMap database of all Ireland.
-- **trafficjam-be** — FastAPI orchestrator. Takes a network from the frontend,
+- **trafficjam-be** - FastAPI orchestrator. Takes a network from the frontend,
   generates agent plans, kicks off simulations, and streams events back via SSE.
-- **simengine** — Spring Boot wrapping MATSim. Runs the actual simulation and
+- **simengine** - Spring Boot wrapping MATSim. Runs the actual simulation and
   fires events into NATS JetStream as they happen.
-- **trafficjam-fe** — React + TypeScript + Deck.gl + Mapbox. Map editor,
+- **trafficjam-fe** - React + TypeScript + Deck.gl + Mapbox. Map editor,
   simulation visualizer, charts.
 
 All deployed on a [Hetzner](https://www.hetzner.com/) VPS via
@@ -80,7 +80,7 @@ All deployed on a [Hetzner](https://www.hetzner.com/) VPS via
 
 ---
 
-## Investigations
+## Investigations & Research
 
 At first we didn't even know where to start. We were 6 engineers with a vague
 vision of what we wanted but no strict plan, no product requirements and no
@@ -89,7 +89,7 @@ things I've learned while working as an SRE at Dailypay under
 [Fearghal Conn](https://www.linkedin.com/in/fearghalconn/) and
 [Chad Lykken](https://www.linkedin.com/in/chadlykken/). We created a project
 board in [Linear](http://linear.app/). A minimalistic roadmap and a few swim
-lanes for each initiative. We adopted the concept of 'investigations' — small
+lanes for each initiative. We adopted the concept of 'investigations' - small
 scoped tasks with the goal of shining light on unknowns, and believe me at the
 start we had a lot.
 
@@ -107,18 +107,18 @@ from those investigations for each of the aforementioned swim-lanes/initiatives.
 ## Initial steps, getting map data and scaffolding
 
 The tech stack and architecture mentioned above did not come to us immediately.
-Quite the opposite — it grew with the project. We wanted to keep things as
+Quite the opposite - it grew with the project. We wanted to keep things as
 minimal as possible from the start, but as the requirements and limitations
 became more and more clear the architecture grew.
 
 At first we just wanted to show some map links in the frontend and have the user
 be able to edit them (later we found out that the "editing" part was not as easy
-as we initially thought — many thanks to
+as we initially thought - many thanks to
 [Carlos Reverter](https://www.linkedin.com/in/carlos-g%C3%BCell-reverter-4b7192292/)
 for handling most of this part).
 
-The original plan was to call the Overpass API — a public API to get
-OpenStreetMap data — directly from the browser. User clicks import, frontend
+The original plan was to call the Overpass API - a public API to get
+OpenStreetMap data - directly from the browser. User clicks import, frontend
 queries Overpass, road network appears on the map. Clean, simple, no backend
 needed for data loading.
 
@@ -129,12 +129,14 @@ everyone heavily. The map loading that was supposed to feel seamless took 30+
 seconds or just failed entirely.
 
 The fix was obvious in hindsight: download the Ireland OSM dataset, load it into
-[PostGIS](https://postgis.net/) — a Postgres extension for handling spatial data
-— and serve it ourselves. That's how our `map-data-service` was born. Now a
-bounding-box query completed in milliseconds.
+[PostGIS](https://postgis.net/) - a Postgres extension for handling spatial data
 
-Here [Nathan Brosnan](https://www.linkedin.com/in/nathan-brosnan-bb390b28a/)
-clutched up with the integration of all this.
+- and serve it ourselves. That's how our `map-data-service` was born. Now a
+  bounding-box query completed in milliseconds.
+
+Thanks to
+[Nathan Brosnan](https://www.linkedin.com/in/nathan-brosnan-bb390b28a/) we were
+able to integrate of all this.
 
 ---
 
@@ -144,7 +146,7 @@ MATSim is a Java framework that needs a lot of code to run properly. It uses the
 concept of "agents" and simulation scores to run simulations.
 
 The idea is simple to lay out and pretty complex to code. It simulates the day
-of an agent — how it goes to school or work, how it goes home, where it goes
+of an agent - how it goes to school or work, how it goes home, where it goes
 shopping and when. All these plans create traffic, and based on how much time
 agents spend in traffic the score goes up or down. Multiple iterations are then
 run and agents try to find the best routes, not only the shortest path, based on
@@ -187,7 +189,7 @@ It requires:
 
 Our `simengine` was responsible for creating a REST API with which we could
 communicate with MATSim in a simpler manner. It acted both as a communication
-layer and as a `facade` pattern — simplifying the complex interface of MATSim
+layer and as a `facade` pattern - simplifying the complex interface of MATSim
 and providing some sensible defaults.
 
 Many thanks to [Clancy Desilva](https://www.linkedin.com/in/clancydesilva/) for
@@ -195,7 +197,7 @@ doing the bulk of that work.
 
 For the agent plans we needed to combine a few things:
 
-1. Census data for the city — to make the simulations more realistic without
+1. Census data for the city - to make the simulations more realistic without
    burdening the user. This included how many people go to school on a given
    day, how many people are working and in which regions, and where residential
    buildings are located.
@@ -219,7 +221,7 @@ the simulation runs, replay for users who join late, and persistence so results
 stick around.
 
 **First attempt: store them in PostgreSQL.** Row-by-row inserts at simulation
-speed. This just didn't work — the write throughput wasn't anywhere close to
+speed. This just didn't work - the write throughput wasn't anywhere close to
 what MATSim was outputting. The database was already behind before the
 simulation was halfway done, and querying 580K rows back out for replay was too
 slow for anything real-time.
@@ -237,7 +239,7 @@ and replay from any point. We publish events to a JetStream subject as they're
 produced. The frontend subscribes and gets live updates. Late joiners replay
 from offset 0. Persistence is built in. This actually worked.
 
-Later we found out that JetStream also supports "buckets" — a key-value blob
+Later we found out that JetStream also supports "buckets" - a key-value blob
 storage solution similar to S3. Since we already had the infrastructure set up,
 we used it for some of the statistics and analytics output from MATSim at the
 end of each run.
@@ -264,7 +266,7 @@ immediately unusable.
 
 The fix was splitting into static and draft layers. During a drag, the original
 node and its connected links are filtered out of the static layer. A lightweight
-draft layer renders only the elements being manipulated — just the dragged node
+draft layer renders only the elements being manipulated - just the dragged node
 and its few connected links. The rest of the network doesn't touch React at all.
 Mouse-up: draft disappears, static merges back. This made it smooth.
 
@@ -273,7 +275,7 @@ Mouse-up: draft disappears, static merges back. This made it smooth.
 The interaction model is a chain of responsibility. `onMouseDown` tries handlers
 in priority order: node dragging first, node adding second. First one that
 returns true consumes the event. This kept the interaction logic readable even
-as we added more modes — split link, multi-select, attribute editing.
+as we added more modes - split link, multi-select, attribute editing.
 
 Multi-select was a late addition and genuinely useful. Hold Cmd, click multiple
 roads, and you can change speed limits or lane counts across all of them at
@@ -290,7 +292,7 @@ handling most of this work.
 
 ## The visualizer
 
-MATSim is really just a framework for computing the traffic simulation — it
+MATSim is really just a framework for computing the traffic simulation - it
 gives you nothing for visualization. For visualizing the simulation and
 extracting powerful statistics and analytics we needed to build this ourselves.
 
@@ -299,7 +301,7 @@ streaming events one by one. The complexity was huge but with enough time and
 iterations we made something that looked _right_. It was definitely more
 beautiful than any of the existing solutions.
 
-<video src="/traffic-simulator/tj.mov" controls style="width:100%"></video>
+{{< video "/traffic-simulator/tj.mp4" >}}
 
 ---
 
@@ -312,14 +314,14 @@ beautiful than any of the existing solutions.
 
 Early in the development of the visualizer, we had a bug that looked spectacular
 in the worst way. Agents were moving in perfectly straight lines between points
-on the map — slicing diagonally across St. Patrick's Street, cutting through
+on the map - slicing diagonally across St. Patrick's Street, cutting through
 buildings, ignoring curves entirely. The simulation thought it was doing fine.
 Visually, it looked like something had gone badly wrong with physics.
 
 The cause was embarrassingly simple once we found it. When we exported the road
 network from OSM into MATSim's format, we represented each link as just two
 fields: `from_node` and `to_node`. The intersection at one end, the intersection
-at the other. That's technically correct — a link connects two nodes. But OSM
+at the other. That's technically correct - a link connects two nodes. But OSM
 roads aren't straight lines between intersections. They're polylines with a
 bunch of intermediate coordinate points describing the curve of the street.
 
@@ -344,7 +346,7 @@ bunch of intermediate coordinate points describing the curve of the street.
 }
 ```
 
-The fix was to include the full geometry of each link in the export — all the
+The fix was to include the full geometry of each link in the export - all the
 intermediate coordinates that define the shape of the road. Once we did that,
 agents started following the actual curves of Cork's streets rather than
 teleporting between intersections in straight lines.
@@ -359,16 +361,16 @@ staring at Deck.gl render code before tracing it back far enough.
 ## Analytics & Insights
 
 MATSim doesn't really like doing the work for you beyond outputting how the
-simulation went — it's your job to compute all the analytics around it.
+simulation went - it's your job to compute all the analytics around it.
 
 Luckily some really smart folks from TU Berlin developed
-[SimWrapper](https://simwrapper.app/) — a plugin for MATSim that allowed us to
+[SimWrapper](https://simwrapper.app/) - a plugin for MATSim that allowed us to
 define via config statistics about the running simulation and have computed
 values ready to store and pull into the frontend.
 
 ![SimWrapper analytics](/traffic-simulator/image-5.png)
 
-This also gave us a very important feature — the link volume view. After a
+This also gave us a very important feature - the link volume view. After a
 simulation completes, you can switch to link volume view. Roads are color-coded
 by how many agents used them: cool blue for quiet streets, green for moderate,
 yellow for busy, red/orange for congested. It's the single most immediately
@@ -390,14 +392,14 @@ wouldn't cut it. We thought about using a mounted bucket in GCS and deploying to
 Cloud Run, but this wouldn't work due to costs and the fact that the simulation
 engine required a lot of RAM.
 
-We opted for a less reliable but cheaper solution — a
+We opted for a less reliable but cheaper solution - a
 [Hetzner](https://www.hetzner.com/) VPS using [Coolify](https://coolify.io/) to
 make deployments a bit less frustrating. Coolify is a self-hosted Heroku
 alternative that gives you one-click deployments for pre-made services.
 
 One of the cool things Coolify allowed us to do was one-click deployment for
 pre-made services. This came in handy when we needed to write the final report
-for UCC — we couldn't find an appropriate platform for 6 students to
+for UCC - we couldn't find an appropriate platform for 6 students to
 collaboratively edit Markdown for free, so we did the most reasonable thing and
 self-hosted our own collaborative Markdown editor at
 [markdown.trafficjam.app](https://markdown.trafficjam.app). An exhilarating
@@ -407,9 +409,7 @@ moment that showed us the power of taking control.
 
 ## Shipping
 
-{{< youtube uKOmeLLJ4Z8 >}}
-
-![Final product screenshot](/traffic-simulator/image-7.png)
+Full demo: {{< youtube uKOmeLLJ4Z8 >}}
 
 The system we ended up with: load a city from a PostGIS-backed OSM database,
 edit the network in a browser, generate synthetic agents from census and
@@ -420,7 +420,7 @@ browser, no config files, no terminal.
 That's not a small thing to ship in two months, with six people, while also
 taking other modules.
 
-A lot of it came down to investing early in shared understanding —
+A lot of it came down to investing early in shared understanding -
 investigations committed to the repo, two-approval PRs, a running Linear board.
 When six people are building in parallel across services that need to integrate,
 that overhead pays back fast.
@@ -433,6 +433,8 @@ is still under active development._
 
 ---
 
-_Questions, feedback, or war stories about your own traffic/simulation projects
-— find me on [GitHub](https://github.com/blagoySimandov/trafficjam) or the
-repo._
+Questions, feedback, or war stories about your own traffic/simulation projects.
+
+Find me on [GitHub](https://github.com/blagoySimandov/trafficjam),
+[Linkedin](https://www.linkedin.com/in/blagoy-simandoff-48416b27a) or the
+trafficjam repo [trafficjam](https://github.com/blagoySimandov/trafficjam).

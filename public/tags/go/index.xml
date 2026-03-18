@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/traffic-simulator-cork/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/traffic-simulator-cork/</guid>
-      <description>How six CS students at UCC shipped a web-based urban traffic simulator in two months — the stack, the war stories, and the architectural decisions that actually worked.</description>
+      <description>How six CS students at UCC shipped a web-based urban traffic simulator in two months - the stack, the war stories, and the architectural decisions.</description>
     </item>
     <item>
       <title>GCP&#39;s Signed URLs &amp; A Browser Oddity</title>
