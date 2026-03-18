@@ -6,8 +6,15 @@
     <description>Recent content on Blagoy Simandoff</description>
     <generator>Hugo -- 0.139.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Aug 2025 19:58:53 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>We built a traffic simulator for Cork in two months</title>
+      <link>http://localhost:1313/posts/traffic-simulator-cork/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/traffic-simulator-cork/</guid>
+      <description>How six CS students at UCC shipped a web-based urban traffic simulator in two months — the stack, the war stories, and the architectural decisions that actually worked.</description>
+    </item>
     <item>
       <title>So You Want to Build a PaaS? (Prompt as a Service 101)</title>
       <link>http://localhost:1313/posts/so-you-want-to-build-a-pass/</link>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://simandoff.blog/sitemap.xml 
+Sitemap: http://localhost:1313/sitemap.xml 
