@@ -130,9 +130,8 @@ seconds or just failed entirely.
 
 The fix was obvious in hindsight: download the Ireland OSM dataset, load it into
 [PostGIS](https://postgis.net/) - a Postgres extension for handling spatial data
-
-- and serve it ourselves. That's how our `map-data-service` was born. Now a
-  bounding-box query completed in milliseconds.
+and serve it ourselves. That's how our `map-data-service` was born. Now a
+bounding-box query completed in milliseconds.
 
 Thanks to
 [Nathan Brosnan](https://www.linkedin.com/in/nathan-brosnan-bb390b28a/) we were
