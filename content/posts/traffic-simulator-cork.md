@@ -394,7 +394,8 @@ engine required a lot of RAM.
 We opted for a less reliable but cheaper solution - a
 [Hetzner](https://www.hetzner.com/) VPS using [Coolify](https://coolify.io/) to
 make deployments a bit less frustrating. Coolify is a self-hosted Heroku
-alternative that gives you one-click deployments for pre-made services.
+alternative that gives you the ability to link up a github repo with a docker
+compose file and instantly set up continuous deployments.
 
 One of the cool things Coolify allowed us to do was one-click deployment for
 pre-made services. This came in handy when we needed to write the final report
