@@ -72,23 +72,30 @@ After some googling and researching we got a few possible solutions:
    notable moment, and the model had no concept of that - it would spot the same
    event twice, live and again on replay, with no way to deduplicate reliably.
 
-2. Using an external API We searched far and wide for an API that would
+2. Using an external API - We searched for a sports API that was cheap, accurate
+   on historical data, and detected enough event types to make the
+   screen-switching feel alive. We landed on
+   [sports.bzzoiro.com](https://sports.bzzoiro.com/). First red flag: the
+   website looked AI-generated. We bought the API anyway for 3 euros and dove
+   in. The documentation was either non-existent or flat-out wrong, also almost
+   certainly AI-generated. Hopefully they fix it at some point.
 
-3. Be cheap enough to run on a free tier (or have a cheap starter plan)
-4. Be accurate enough to detect the most important moments
-5. Have enough data about past matches so we can make our demo without relying
-   on live matches
-6. Have enough "important moments" detected and savedso that we can switch
-   between the screens often
+   The real problems surfaced during integration. Historical match coverage was
+   sparse. Matches we wanted to use for the demo were simply missing, forcing us
+   to hunt for different videos and footage. That wasted a significant chunk of
+   our already limited time.
 
-Unfortunately we couldn't find a solution that met all of our requirements. We
-did go through a phase where we tried building on top of the
-https://sports.bzzoiro.com/ api but it lacked enough important moments for past
-matches. It only detected goals and fouls. Stuff like attacks were not detected
-so there was this weierd user experience weere we only switched to match after
-the goal as already happened and for most matches this was very rare (most
-mathces have a few goals at best) so it was not really intersting and useful to
-demo for.
+   The deeper problem, and the reason we ultimately abandoned it: for historical
+   matches the API only returned a handful of event types. Goals and fouls.
+   Nothing else. No attacks, no near misses, no highlights. For most matches
+   that means a handful of events total, so the screen would barely ever switch
+   and the whole idea fell flat in the demo.
+
+   On top of that, all timestamps were in "match time" (minutes into the game)
+   rather than "video time" (position in the actual video file). We had to
+   hardcode an offset just to align the two for the demo. Not a dealbreaker on
+   its own, but one more thing piling up. All of this combined ruled the API
+   out.
 
 3. OpenAI's Whisper TTS combined with an LLM This was our was idea that we
    really wanted to avoid at first for a multitude of reasons. First of all both
