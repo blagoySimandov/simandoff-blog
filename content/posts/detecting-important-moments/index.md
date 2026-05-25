@@ -165,8 +165,8 @@ The goal: keep the commentator, suppress the crowd.
 
 **Stripping the commentator for the custom narrator**
 
-For the narrator feature (more on this below) we needed the inverse: crowd
-ambience only without the commentator. Kris used a
+For the narrator feature (more on this below) we needed the inverse - some crowd
+'ambience' only without the commentator. Kris used a
 [stereo center-channel subtraction](<https://en.wikipedia.org/wiki/Panning_(audio)>)
 trick. Stereo audio has two channels: Left (L) and Right (R). TV broadcasts
 always pan the commentator dead center, meaning the same voice signal is sent
