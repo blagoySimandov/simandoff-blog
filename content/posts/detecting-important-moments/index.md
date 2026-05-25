@@ -252,7 +252,7 @@ rest of the match. Each 30-second chunk would be narrated in character, layered
 over the original crowd ambience so it still felt like you were inside the
 stadium.
 
-{{< youtube HfuY4JmoDdU >}}
+{{< vimeo 1195377625 >}}
 
 The pipeline was the same as before up to the transcription step, but then it
 branched into three extra stages before a chunk could be served:
@@ -277,7 +277,9 @@ the limited time that we had...
 
 # The Demo
 
-It went terribly. SOMEHOW two things went wrong at once.
+If you've read this far you probably want to hear how the demo went.
+
+Well, it went terribly. SOMEHOW two things went wrong at once.
 
 We were called up first to present. We walked up with a 6-minute presentation
 ready, and were told on the spot that we had 3 minutes. So that was fun.

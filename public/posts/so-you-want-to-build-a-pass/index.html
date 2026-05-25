@@ -401,20 +401,45 @@ not get the money but at least you got the clout.</li>
     </li>
 </ul>
 
-  </footer><script src="https://giscus.app/client.js"
-        data-repo="blagoysimandov/simandoff-blog"
-        data-repo-id="R_kgDONe4nmA"
-        data-category="Announcements"
-        data-category-id="DIC_kwDONe4nmM4C90UE"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
+  </footer><div id="giscus-container"></div>
+<script>
+function getGiscusTheme() {
+  return document.body.classList.contains('dark') ? 'dark' : 'light';
+}
+
+function sendGiscusTheme(theme) {
+  const iframe = document.querySelector('iframe.giscus-frame');
+  if (!iframe) return;
+  iframe.contentWindow.postMessage({ giscus: { setConfig: { theme } } }, 'https://giscus.app');
+}
+
+function loadGiscus() {
+  const script = document.createElement('script');
+  script.src = 'https://giscus.app/client.js';
+  script.setAttribute('data-repo', 'blagoysimandov/simandoff-blog');
+  script.setAttribute('data-repo-id', 'R_kgDONe4nmA');
+  script.setAttribute('data-category', 'Announcements');
+  script.setAttribute('data-category-id', 'DIC_kwDONe4nmM4C90UE');
+  script.setAttribute('data-mapping', 'pathname');
+  script.setAttribute('data-strict', '0');
+  script.setAttribute('data-reactions-enabled', '1');
+  script.setAttribute('data-emit-metadata', '0');
+  script.setAttribute('data-input-position', 'bottom');
+  script.setAttribute('data-theme', getGiscusTheme());
+  script.setAttribute('data-lang', 'en');
+  script.crossOrigin = 'anonymous';
+  script.async = true;
+  document.getElementById('giscus-container').appendChild(script);
+}
+
+const observer = new MutationObserver(() => sendGiscusTheme(getGiscusTheme()));
+observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', loadGiscus);
+} else {
+  loadGiscus();
+}
 </script>
 
 </article>
