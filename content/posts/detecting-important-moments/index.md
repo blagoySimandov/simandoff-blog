@@ -233,7 +233,7 @@ already processed and waiting.
 
 ![Real-Time Important Moment Detection Pipeline](./images/flow.png)
 
-# BONUS: Creating a custom narrator for our match
+# Creating a custom narrator
 
 Remember the "Narrator" button in the top right corner? Here is what it did -
 and how painful it was to build.
