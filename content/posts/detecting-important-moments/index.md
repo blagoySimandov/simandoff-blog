@@ -75,7 +75,7 @@ benchmark and dataset for broadcast soccer understanding, with pre-trained
 action spotting models built on top of ResNet-152 features. It covers 17 action
 classes across 500 full games. Seemed perfect on paper. In practice, accuracy
 was unreliable - it would fire at high confidence on events that weren't there,
-and under-detect obvious ones like goals. The bigger problem: it
+and under-detect obvious ones like goals. The bigger problem was that it
 double-triggered on replays. Broadcast footage replays every notable moment, and
 the model had no concept of that - it would spot the same event twice, live and
 again on replay, with no way to deduplicate reliably.
@@ -84,26 +84,26 @@ again on replay, with no way to deduplicate reliably.
 
 We searched for a sports API that was cheap, accurate on historical data, and
 detected enough event types to make the screen-switching feel alive. We landed
-on [sports.bzzoiro.com](https://sports.bzzoiro.com/). First red flag: the
-website looked AI-generated. We bought the API anyway for 3 euros and dove in.
-The documentation was either non-existent or flat-out wrong, also almost
-certainly AI-generated. Hopefully they fix it at some point.
+on [sports.bzzoiro.com](https://sports.bzzoiro.com/). The first red flag was
+that the website looked AI-generated. We bought the API anyway for 3 euros and
+dove in. The documentation was either non-existent or flat-out wrong, also
+almost certainly AI-generated. Hopefully they fix it at some point.
 
 The real problems surfaced during integration. Historical match coverage was
 thin. Matches we wanted to use for the demo were simply missing, forcing us to
 hunt for different videos and footage. That wasted a significant chunk of our
 already limited time.
 
-The deeper problem, and the reason we ultimately abandoned it: for historical
-matches the API only returned a handful of event types. Goals and fouls. Nothing
-else. No attacks, no near misses, no highlights. For most matches that means a
-handful of events total, so the screen would barely ever switch and the whole
-idea fell flat in the demo.
+The more serious problem, and the reason we ultimately abandoned it, was that
+historical matches the API only returned a handful of event types. Goals and
+fouls. Nothing else... There were no attacks, no near misses, no highlights. For
+most matches that means a we had access only to a handful of events in total, so
+the screen would barely ever switch and the whole idea fell flat in the demo.
 
 On top of that, all timestamps were in "match time" (minutes into the game)
 rather than "video time" (position in the actual video file). We had to hardcode
 an offset just to align the two for the demo. Not a dealbreaker on its own, but
-one more thing piling up. All of this combined ruled the API out.
+it was just one more thing piling up. All of this combined ruled the API out.
 
 ## Option 3: Whisper STT + Gemini 2.5 Flash
 
@@ -185,9 +185,10 @@ variation between left and right (fans on different sides, spatial positioning):
 L - R = (voice + crowd_L) - (voice + crowd_R) = crowd_L - crowd_R
 ```
 
-The result: commentator gone, crowd mostly intact. The same trick is used in
-karaoke vocal removers. A follow-up EQ cut at 2.5kHz cleaned up any residual
-voice frequencies that did not fully cancel in the real-world audio.
+At the end we have the commentator gone and the crowd mostly intact. The same
+trick is used in karaoke vocal removers. A follow-up EQ cut at 2.5kHz cleaned up
+any residual voice frequencies that did not fully cancel in the real-world
+audio.
 
 </details>
 
@@ -205,13 +206,13 @@ That meant learning
 [HLS (HTTP Live Streaming)](https://en.wikipedia.org/wiki/HTTP_Live_Streaming).
 HLS works by splitting a video into fixed-duration `.ts` segment files and
 writing a `.m3u8` playlist that tells the player their order and location. You
-can think of the `.m3u8` as a table of contents: the video is split into
+can think of the `.m3u8` as a table of contents - the video is split into
 chapters (the `.ts` segments) stored separately, and the table of contents just
-lists them in order with their durations - it contains no video itself, just
-pointers. When you press play, the player reads the table of contents first,
-then fetches each chapter one by one as needed. The name, by the way, comes from
-M3U, an old MP3 playlist format ("MP3 URL"), with the "8" meaning UTF-8
-encoding. Apple extended it for HLS and just kept the name.
+lists them in order with their durations. When you press play, the player reads
+the table of contents first, then fetches each chapter one by one as needed. The
+name, by the way, comes from M3U, an old MP3 playlist format ("MP3 URL"), with
+the "8" meaning UTF-8 encoding. Apple extended it for HLS and just kept the
+name.
 
 We split each match into 30-second chunks. The HLS spec recommends 6-10 seconds
 for live streaming, but we found 30 seconds worked best for our pipeline. The
@@ -221,7 +222,7 @@ overhead - a network round-trip to Whisper, a round-trip to Gemini. With
 30-second chunks you pay it twice. The actual transcription and generation time
 scales with audio length, but the fixed overhead doesn't - so smaller chunks
 meant spending proportionally more time on API handshakes than on real work. Too
-large was also bad: one chunk takes too long end-to-end and the player sits
+large was also bad... One chunk takes too long end-to-end and the player sits
 waiting before the first segment is even ready. Through trial and error 30
 seconds hit the sweet spot.
 
