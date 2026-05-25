@@ -6,8 +6,24 @@
     <description>Recent content in Posts on Blagoy Simandoff</description>
     <generator>Hugo -- 0.139.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 17:09:14 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Detecting Important Moments in a Football Match</title>
+      <link>http://localhost:1313/posts/detecting-important-moments/</link>
+      <pubDate>Fri, 22 May 2026 17:09:14 +0100</pubDate>
+      <guid>http://localhost:1313/posts/detecting-important-moments/</guid>
+      <description>&lt;h2 id=&#34;detecting-important-moments-in-a-football-match&#34;&gt;Detecting Important Moments in a Football Match&lt;/h2&gt;
+&lt;p&gt;Last week me and a few friends (Mert Mladenov (Linkedin) and Kris
+Dimitrov(Linkedin)) from college (UCC) signed up for the ACM World Cup 2026
+Hackathon. The theme was really freeing. We were tasked to create something that
+relates in any way to the sport of football and or to the upcoming world cup. We
+actually had tons of ideas that we had discussed even prior to the hackathon out
+of pure excitement and curiosity. After the initial brainstorming session we
+stopped on 2 that we thought were the most interesting and challenging ones. We
+were sure about one thing. We did not want to create something that can be
+easily replicated or another CRUD app or a ChatGPT wrapper.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>We built a traffic simulator for Cork in two months</title>
       <link>http://localhost:1313/posts/traffic-simulator-cork/</link>

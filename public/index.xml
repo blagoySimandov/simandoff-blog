@@ -6,8 +6,26 @@
     <description>Recent content on Blagoy Simandoff</description>
     <generator>Hugo -- 0.139.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 17:09:14 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Detecting Important Moments in a Football Match</title>
+      <link>http://localhost:1313/posts/detecting-important-moments/</link>
+      <pubDate>Fri, 22 May 2026 17:09:14 +0100</pubDate>
+      <guid>http://localhost:1313/posts/detecting-important-moments/</guid>
+      <description>&lt;p&gt;Picking a hackathon idea is harder than it sounds, especially when you&amp;rsquo;re trying
+to challenge yourself and not to build something embarrassing.&lt;/p&gt;
+&lt;p&gt;Last week me and a few friends
+(&lt;a href=&#34;https://www.linkedin.com/in/mert-milenov/&#34;&gt;Mert Milenov&lt;/a&gt; and
+&lt;a href=&#34;https://www.linkedin.com/in/kristian-dimitrov-b66718228?originalSubdomain=bg&#34;&gt;Kris Dimitrov&lt;/a&gt;)
+from college (&lt;a href=&#34;https://www.ucc.ie/en/&#34;&gt;UCC&lt;/a&gt;) signed up for the
+&lt;a href=&#34;https://www.instagram.com/p/DXpNQpuDAze/&#34;&gt;ACM World Cup 2026 Hackathon&lt;/a&gt;. This
+year the theme was &lt;em&gt;really&lt;/em&gt; freeing - we were tasked to create something that
+relates in any way to the sport of football and/or to the upcoming world cup. We
+were looking forward to this hackathong for a few weeks now and we did know it
+is going to be world cup realted so we did have some ideas in store. Quickly
+after the initial brainstorming session we had chosen 2 that were both&lt;/p&gt;</description>
+    </item>
     <item>
       <title>We built a traffic simulator for Cork in two months</title>
       <link>http://localhost:1313/posts/traffic-simulator-cork/</link>
