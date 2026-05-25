@@ -298,6 +298,6 @@ on the pipeline, and it had quietly eaten through our allowance. I should have
 checked the quotas. I did not check the quotas.
 
 We did not win and we were angry and annoyed that we could not properly showcase
-what we built. But we did build _something_ genuinely interesting in 48 hours on
+what we built. But we did build _something_ genuinely interesting in 24 hours on
 pretty much no sleep. And honestly? That feels like enough. At least we got a
 good story out of it :D.
