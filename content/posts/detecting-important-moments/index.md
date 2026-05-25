@@ -263,6 +263,8 @@ branched into three extra stages before a chunk could be served:
 3. ffmpeg muxes the generated voice over the crowd-only audio and splices it
    back into the video segment in the correct HLS format
 
+![Narrator Pipeline](./images/diagram2.png)
+
 The result was genuinely fun when it worked. The narrator had real personality,
 the crowd roars were still there underneath, and the "bribe" instructions came
 through clearly.
