@@ -33,6 +33,7 @@ enableRobotsTXT = true
   ShowWordCount = true
   ShowRssButtonInSectionTermList = true
   UseHugoToc = true
+  comments = true
 
 [params.homeInfoParams]
   Title = "👋 Hey, I'm Blagoy"

@@ -12,7 +12,7 @@ relative = true
 +++
 
 Picking a hackathon idea is harder than it sounds, especially when you're trying
-to challenge yourself and not to build something embarrassing.
+to challenge yourself and not build something embarrassing.
 
 Last week me and a few friends
 ([Mert Milenov](https://www.linkedin.com/in/mert-milenov/) and

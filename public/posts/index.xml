@@ -13,16 +13,7 @@
       <link>http://localhost:1313/posts/detecting-important-moments/</link>
       <pubDate>Fri, 22 May 2026 17:09:14 +0100</pubDate>
       <guid>http://localhost:1313/posts/detecting-important-moments/</guid>
-      <description>&lt;h2 id=&#34;detecting-important-moments-in-a-football-match&#34;&gt;Detecting Important Moments in a Football Match&lt;/h2&gt;
-&lt;p&gt;Last week me and a few friends (Mert Mladenov (Linkedin) and Kris
-Dimitrov(Linkedin)) from college (UCC) signed up for the ACM World Cup 2026
-Hackathon. The theme was really freeing. We were tasked to create something that
-relates in any way to the sport of football and or to the upcoming world cup. We
-actually had tons of ideas that we had discussed even prior to the hackathon out
-of pure excitement and curiosity. After the initial brainstorming session we
-stopped on 2 that we thought were the most interesting and challenging ones. We
-were sure about one thing. We did not want to create something that can be
-easily replicated or another CRUD app or a ChatGPT wrapper.&lt;/p&gt;</description>
+      <description>How three CS students built a real-time football match analyzer that detects important moments and switches between two live screens using Whisper STT, Gemini 2.5 Flash, and HLS streaming.</description>
     </item>
     <item>
       <title>We built a traffic simulator for Cork in two months</title>

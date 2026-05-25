@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/detecting-important-moments/</link>
       <pubDate>Fri, 22 May 2026 17:09:14 +0100</pubDate>
       <guid>http://localhost:1313/posts/detecting-important-moments/</guid>
-      <description>How three CS students built a real-time football match analyzer that detects important moments and switches between two live screens using Whisper STT, Gemini 2.5 Flash, and HLS streaming - and how we hit the Whisper API quota exactly at demo time.</description>
+      <description>How three CS students built a real-time football match analyzer that detects important moments and switches between two live screens using Whisper STT, Gemini 2.5 Flash, and HLS streaming.</description>
     </item>
   </channel>
 </rss>
